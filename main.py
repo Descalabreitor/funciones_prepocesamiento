@@ -1,7 +1,6 @@
 from preprocesado.escalar import Escalar
 from preprocesado.simtonum import CodificadorEtiqueta
 from preprocesado.validacion_modelo import divide_train_test
-
 import pandas as pd
 import numpy as np
 
@@ -21,6 +20,7 @@ escalar2.ajustar(pruebaescalar2)
 t = escalar2.transformar(pruebaescalar2)
 print( pruebaescalar)
 print(r)
+print(type(r[0]))
 print(escalar.transformar_inv(r))
 print("-----------------------------------")
 print( pruebaescalar2)
